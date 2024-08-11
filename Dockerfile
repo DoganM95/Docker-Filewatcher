@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # install stuff
-RUN apk add --no-cache inotify-tools curl
+RUN apk add --no-cache inotify-tools curl docker-cli
 
 # script to container
 COPY watcher.sh /usr/local/bin/watcher.sh
